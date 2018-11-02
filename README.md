@@ -16,7 +16,7 @@
 >*  Download zip [tSQLt Runner](https://github.com/cprieto/tsqlt-teamcity/releases) 
 
 
-   ![alt text](downloadTSQLT_Runner.png?raw=true) 
+   ![alt text](Images/downloadTSQLT_Runner.png?raw=true) 
    
    
 >*  Download [SQL Test](https://www.red-gate.com/dynamic/products/sql-development/sql-test/download) 
@@ -30,13 +30,13 @@
   window** like this 
   
   
-  ![alt text](teamcity-workdir.PNG) 
+  ![alt text](Images/teamcity-workdir.PNG) 
   
   
   > Next step is to select system account for given steps like this 
   
   
-  ![alt text](teamcity-select-account.PNG) 
+  ![alt text](Images/teamcity-select-account.PNG) 
   
   
   > Once you are done with installtion, it will automatically start teamcity in your default browser. 
