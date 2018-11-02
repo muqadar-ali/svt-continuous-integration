@@ -58,7 +58,7 @@
   > Image Source: https://confluence.jetbrains.com/display/TCD10/Installation+Quick+Start 
   
   
-  ![alt text](teamcity-initialstep.png) 
+  ![alt text](Images/teamcity-initialstep.png) 
   
   
   > Setup is done. 
@@ -68,32 +68,32 @@
    > Open teamcity in browser, go to **Administration** tab on top 
 
 
-   ![alt text](teamcity-adm.png) 
+   ![alt text](Images/teamcity-adm.png) 
    
 
    > Scroll down and click **Plugins List** 
 
 
-   ![alt text](teamcity-plugins-list.png) 
+   ![alt text](Images/teamcity-plugins-list.png) 
    
 
    > follow below shown steps 
 
 
-   ![alt text](teamcity-plugin-upload.png) 
+   ![alt text](Images/teamcity-plugin-upload.png) 
    
 
    > select zip and click upload 
 
 
-   ![alt text](teamcity-tsql-popup.png) 
+   ![alt text](Images/teamcity-tsql-popup.png) 
    
     
    > Now you should see **tsqlt runner** in external plugins 
    
    
    
-   ![alt text](teamcity-tsqlt-verify.png) 
+   ![alt text](Images/teamcity-tsqlt-verify.png) 
    
    
 #### SQL Test
@@ -101,7 +101,7 @@
    > Run downloaded sql test setup and select only **SQL Test** 
    
    
-   ![alt text](sql-test-install.png) 
+   ![alt text](Images/sql-test-install.png) 
    
    
    > and go on with standard installation
@@ -113,7 +113,7 @@
   >  3. You should see following options
    
    
-   ![alt text](sql-test-installed2.png) 
+   ![alt text](Images/sql-test-installed2.png) 
    
    
    ##### Running sql test in Microsoft SQL Server Management Studio (MSSMS) 
@@ -124,54 +124,54 @@
    > Click **New Test** and after that you should see below given option if it is the first time. 
    
    
-   ![alt text](sql-test-schema-select.png) 
+   ![alt text](Images/sql-test-schema-select.png) 
    
    
    > Write test case name(test stored procedure) 
    * It should start with **test** word (standard notation) 
    
    
-   ![alt text](sql-test-new-test.png) 
+   ![alt text](Images/sql-test-new-test.png) 
    
    
    > After above steps, you should see an auto generated new sample test case like this 
    
    
-   ![alt text](new-test-sample.png) 
+   ![alt text](Images/new-test-sample.png) 
    
    
    > Inorder to keep this tutorial simple, remove comments and make a small change in above shown test case 
    > i.e. it should look like this 
    
    
-   ![alt text](sql-test-new-test-simple.png) 
+   ![alt text](Images/sql-test-new-test-simple.png) 
    
    
    > Execute this test case (procedure script)
    
    
-   ![alt text](sql-test-execute.png) 
+   ![alt text](Images/sql-test-execute.png) 
    
    
    > You should see below given message 
    
    
-   ![alt text](sql-test-execute-success.png)
+   ![alt text](Images/sql-test-execute-success.png)
    
    > After that, go to below shown tab 
    
    
-   ![alt text](click-sql-test.png) 
+   ![alt text](Images/click-sql-test.png) 
    
    > Run test case in MSSMS to verify if framework works or not  
    
    
-   ![alt text](sql-test-run-tests.png) 
+   ![alt text](Images/sql-test-run-tests.png) 
    
    > Success message 
    
    
-   ![alt text](sql-test-run-success.png) 
+   ![alt text](Images/sql-test-run-success.png) 
    
    
    
@@ -185,49 +185,49 @@
    > Create project as shown below   
    
    
-   ![alt text](tfsCreateProject.png) 
+   ![alt text](Images/tfsCreateProject.png) 
    
    
   >  then 
    
    
-   ![alt text](tfsCreateProject2.png) 
+   ![alt text](Images/tfsCreateProject2.png) 
    
    
  >   And you should see your first TFS project created
    
    
-   ![alt text](tfs-project-created.png)
+   ![alt text](Images/tfs-project-created.png)
    
    
  >   Now we need to generate token. To do that, go to security tab as shown below
    
    
-   ![alt text](tfs-token.png) 
+   ![alt text](Images/tfs-token.png) 
    
    
  >   Click **add** as shown below
    
    
-   ![alt text](tfs-add-token1.png) 
+   ![alt text](Images/tfs-add-token1.png) 
    
    
  >   fill the given fields 
    
    
-   ![alt text](tfs-token2.png) 
+   ![alt text](Images/tfs-token2.png) 
    
    
  >   scroll down and click **Create Token** 
    
    
-   ![alt text](tfs-token-gen.png) 
+   ![alt text](Images/tfs-token-gen.png) 
    
    
  >   you should now copy the generated token and note it down as shown below 
    
    
-   ![alt text](tfs-token-copy.png) 
+   ![alt text](Images/tfs-token-copy.png) 
    
    
 >    you have successfully configured tfs online. Now it is time to create a visual studio project with NUnit tests.
@@ -238,96 +238,96 @@
  >   Name the project same as you named the tfs repository (in order to keep it simple for now) 
    
    
-   ![alt text](vs-code1.png) 
+   ![alt text](Images/vs-code1.png) 
    
    
   >  now you have empty test method as shown below but it is in MSTest framework. (We will change it to NUnit as we move further) 
    
    
-   ![alt text](vs-code2.png) 
+   ![alt text](Images/vs-code2.png) 
    
    
  >   Add a new project to same solution (that needs to be nested) 
    
    
-   ![alt text](vs-code3.png) 
+   ![alt text](Images/vs-code3.png) 
    
    
  >   select project type as shown below 
    
    
-   ![alt text](vs-code4.png) 
+   ![alt text](Images/vs-code4.png) 
    
    
  >   now you have empty class 
    
    
-   ![alt text](vs-code5.png) 
+   ![alt text](Images/vs-code5.png) 
    
    
  >   change above shown class to **calculator** class (for testing purpose) 
    
    
-   ![alt text](vs-code6.png)
+   ![alt text](Images/vs-code6.png)
    
    
  >   Adding reference of calculator project (ClassLibrary1) to testing project 
    
    
-   ![alt text](vs-code7.png) 
+   ![alt text](Images/vs-code7.png) 
    
    
  >   select as shown below 
    
    
-   ![alt text](vs-code8.png) 
+   ![alt text](Images/vs-code8.png) 
    
    
  >   Adding **NUnit** test framework and **NUnit adapter** to the test project 
    
    
-   ![alt text](vs-code9.png) 
+   ![alt text](Images/vs-code9.png) 
    
    
-   ![alt text](vs-code10.png) 
+   ![alt text](Images/vs-code10.png) 
    
    
-   ![alt text](vs-code11.png) 
+   ![alt text](Images/vs-code11.png) 
    
    
    
-   ![alt text](vs-code14.png)
+   ![alt text](Images/vs-code14.png)
    
    
  >   Change **UnitTest1** class (or whatever you named it) as shown below 
    
    
-   ![alt text](vs-code12.png) 
+   ![alt text](Images/vs-code12.png) 
    
    
  >   Build solution  
  >   Run test cases as shown below 
    
    
-   ![alt text](vs-code15.png) 
+   ![alt text](Images/vs-code15.png) 
    
    
  >   Go to **Test Explorer** to see results 
    
    
-   ![alt text](vs-code13.png) 
+   ![alt text](Images/vs-code13.png) 
    
    
  >   Test cases result 
    
    
-   ![alt text](vs-code17.png) 
+   ![alt text](Images/vs-code17.png) 
    
    
  >   you can also run tests using **Test Explorer** 
    
    
-   ![alt text](vs-code16.png)  
+   ![alt text](Images/vs-code16.png)  
    
    
    
@@ -336,55 +336,55 @@
  >  Open team explorer 
   
   
-  ![alt text](tfs-vs1.png)  
+  ![alt text](Images/tfs-vs1.png)  
   
   
  >  Click connect 
   
   
-  ![alt text](tfs-vs2.png)  
+  ![alt text](Images/tfs-vs2.png)  
   
   
-  ![alt text](tfs-vs3.png) 
+  ![alt text](Images/tfs-vs3.png) 
   
    
 >    select the project 
 
    
-   ![alt text](tfs-vs4.png) 
+   ![alt text](Images/tfs-vs4.png) 
    
 
    
 >    map and get project 
    
    
-   ![alt text](tfs-vs5.png) 
+   ![alt text](Images/tfs-vs5.png) 
    
  >   mapped successfully. now we need to push the project (add to source control) 
    
    
-   ![alt text](tfs-vs6.png)  
+   ![alt text](Images/tfs-vs6.png)  
    
    
-   ![alt text](tfs-vs7.png)  
+   ![alt text](Images/tfs-vs7.png)  
    
    
-   ![alt text](tfs-vs8.png)  
+   ![alt text](Images/tfs-vs8.png)  
    
    
  >   go to team explorer => pending changes => check in changes 
    
    
-   ![alt text](tfs-vs16.png)  
+   ![alt text](Images/tfs-vs16.png)  
    
    
-   ![alt text](tfs-vs9.png)  
+   ![alt text](Images/tfs-vs9.png)  
    
    
-   ![alt text](tfs-vs10.png) 
+   ![alt text](Images/tfs-vs10.png) 
    
    
-   ![alt text](tfs-vs11.png)  
+   ![alt text](Images/tfs-vs11.png)  
    
 
  >   tfs is configured. follow next step of creating project in teamcity 
@@ -395,73 +395,73 @@
  >  before we move on to creating project, let's add some tools. 
   
   
-  ![alt text](tc-vs21.png) 
+  ![alt text](Images/tc-vs21.png) 
   
   
-  ![alt text](tc-vs22.png) 
+  ![alt text](Images/tc-vs22.png) 
   
   
  >  add NUnit console 
  
   
-  ![alt text](tc-vs23.png) 
+  ![alt text](Images/tc-vs23.png) 
   
   
 >   select NUnit console version 
   
   
-  ![alt text](tc-vs24.png) 
+  ![alt text](Images/tc-vs24.png) 
   
    
  >  again click install tool and add NuGet installer (version 4.8.1 for this tutorial)
   
   
-  ![alt text](tc-vs25.png) 
+  ![alt text](Images/tc-vs25.png) 
   
    
    
  >  Go to Administration tab and then create new project 
    
    
-  ![alt text](teamcity-new-proj.png)  
+  ![alt text](Images/teamcity-new-proj.png)  
   
   
  >  after that, select visual studio team service 
   
   
-  ![alt text](tc-conf1.png)  
+  ![alt text](Images/tc-conf1.png)  
   
   
-  ![alt text](tc-conf2.png) 
+  ![alt text](Images/tc-conf2.png) 
   
  >  choose repository 
   
   
-  ![alt text](tc-conf3.png) 
+  ![alt text](Images/tc-conf3.png) 
   
   
  >  and after that you will be prompted with an option, just click **Proceed**. 
   
   
-  ![alt text](tc-vs36.png) 
+  ![alt text](Images/tc-vs36.png) 
   
   
  >  after this, just click cancel and go to **Parameters** tab.  
  >  we need to add 4 parameters.
   
   
-  ![alt text](tc-conf4.png) 
+  ![alt text](Images/tc-conf4.png) 
   
   
   
-  ![alt text](tc-conf5.png) 
+  ![alt text](Images/tc-conf5.png) 
   
   
   1. 
  >  add project name parameter 
   
   
-  ![alt text](tc-conf6.png) 
+  ![alt text](Images/tc-conf6.png) 
   
   
   2. 
@@ -470,11 +470,11 @@
   Microsoft sql server management studio 
   
   
-  ![alt text](tc-conf9.png) 
+  ![alt text](Images/tc-conf9.png) 
   
   
   
-  ![alt text](tc-vs27.png) 
+  ![alt text](Images/tc-vs27.png) 
   
   
   3.
@@ -482,47 +482,47 @@
  >  you can get your database name from microsoft sql server management studio as shown below  
   
   
-  ![alt text](tc-conf10.png) 
+  ![alt text](Images/tc-conf10.png) 
   
   
-  ![alt text](tc-conf11.png) 
+  ![alt text](Images/tc-conf11.png) 
   
   
   4. 
   > click add parameter and add database username 
   
   
-  ![alt text](tc-conf7.png) 
+  ![alt text](Images/tc-conf7.png) 
   
   
 >   parameters added. you should see these 4 parameters 
   
   
-  ![alt text](tc-conf12.png) 
+  ![alt text](Images/tc-conf12.png) 
   
   
   > Now we need to add 4 build steps.
   > Go to build steps tab 
   
   
-  ![alt text](tc-conf13.png) 
+  ![alt text](Images/tc-conf13.png) 
   
   
   
-  ![alt text](tc-conf14.png) 
+  ![alt text](Images/tc-conf14.png) 
   
   
  >  select NuGet installer 
   
   
-  ![alt text](tc-conf16.png) 
+  ![alt text](Images/tc-conf16.png) 
   
   
   1. 
  >  add NuGet installer to your project and save 
   
   
-  ![alt text](tc-vs26.png) 
+  ![alt text](Images/tc-vs26.png) 
   
   
   2. 
@@ -530,7 +530,7 @@
   > add MS Build step 
   
   
-  ![alt text](tc-conf15.png) 
+  ![alt text](Images/tc-conf15.png) 
   
   
  >  save. 
@@ -540,7 +540,7 @@
  >  add NUnit step 
   
   
-  ![alt text](tc-conf17.png) 
+  ![alt text](Images/tc-conf17.png) 
   
   
 >   save 
@@ -550,14 +550,14 @@
  >  add tSQLt Runner step (to run sql tests) 
   
   
-  ![alt text](tc-conf18.png) 
+  ![alt text](Images/tc-conf18.png) 
   
   
   
  >  you should see these 4 build steps 
   
   
-  ![alt text](tc-vs33.png) 
+  ![alt text](Images/tc-vs33.png) 
   
   
   
@@ -579,7 +579,7 @@
 >   save it (Ctrl+S). Go to team explorer => pending changes => check in 
   
   
-  ![alt text](tfs-vs16.png) 
+  ![alt text](Images/tfs-vs16.png) 
   
   
 >   THE TIME HAS COME ! 
@@ -588,15 +588,15 @@
 
 >   Redirect to: **localhost:yourport** in your browser and click your project 
   
-  ![alt text](tc-vs28.png) 
+  ![alt text](Images/tc-vs28.png) 
   
 >   click run and wait for the result 
   
-  ![alt text](tc-29.png) 
+  ![alt text](Images/tc-29.png) 
   
 >   result 
   
-  ![alt text](tc-vs30.png) 
+  ![alt text](Images/tc-vs30.png) 
   
 >   You have your continuous integration. Enjoy!. 
   
@@ -605,7 +605,7 @@
 
 * NuGet missing on computer 
 
-![alt text](error.png) 
+![alt text](Images/error.png) 
 
 
 * Solutions 
